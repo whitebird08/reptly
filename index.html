@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="reptlyApp">
+<head>
+  <title></title>
+  <link rel="stylesheet" href="http://bootswatch.com/slate/bootstrap.min.css">
+  <link rel="stylesheet" href='main.css'>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+  <base href="/">
+</head>
+<body ng-controller="">
+  <nav class="navbar navbar-default navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">Reptly</a>
+      </div>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input ng-model='search' type="text" class="form-control" placeholder="Search">
+        </div>
+      </form>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<div class="row">
+    <div id='empty' class="col-md-4">
+      <div class="well">.col-md-4</div>
+    </div>
+    <div class="jumbotron col-md-4" >   
+      <h1>Reptly</h1>
+     <!--  <p><a class="btn btn-primary btn-lg" href="#" role="button">Search</a></p> -->
+    </div>
+    <div id='empty' class="col-md-4">
+      <div class="well">.col-md-4</div>
+    </div>
+  </div>
+
+</body>
+</html>
