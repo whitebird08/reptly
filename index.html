@@ -15,10 +15,18 @@
       <div class="navbar-header">
         <a class="navbar-brand" href="/">Reptly</a>
       </div>
+
       <form class="navbar-form navbar-left" role="search">
         <div class="form-group">
           <input ng-model='search' type="text" class="form-control" placeholder="Search">
         </div>
+      
+        <span>Filter For</span>
+         <select ng-model='organizeBy' ng-init="organizeBy = 'panelTitle' ">
+           <option value='snakes'>snakes</option>
+           <option value='turtles'>turtles</option>
+           <option value='lizards'>lizards</option>
+         </select>
       </form>
 
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
